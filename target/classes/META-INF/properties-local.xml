@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- 
+  <property>
+    <name>dt.application.{appName}.operator.{opName}.prop.{propName}</name>
+    <value>some-default-value (if value is not specified, it is required from the user or custom config when launching)</value>
+  </property>
+  -->
+  <!-- memory assigned to app master
+  <property>
+    <name>dt.attr.MASTER_MEMORY_MB</name>
+    <value>1024</value>
+  </property>
+  -->
+  <property>
+    <name>dt.application.DroolsTestApplication.operator.droolsOperator.prop.sessionName</name>
+    <value>test-session</value>
+  </property>
+  <property>
+    <name>dt.application.DroolsTestApplication.operator.droolsOperator.prop.loadSpringSession</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>dt.application.DroolsTestApplication.operator.droolsOperator.prop.rulesDir</name>
+    <value>/home/hitesh/droolstestapp/src/test/resources/rules</value>
+  </property>
+  <property>
+    <name>dt.application.DroolsTestApplication.operator.finalOperator.prop.outputFileName</name>
+    <value>results</value>
+  </property>
+  <property>
+    <name>dt.application.DroolsTestApplication.operator.finalOperator.prop.filePath</name>
+    <value>/tmp</value>
+  </property>
+</configuration>
+

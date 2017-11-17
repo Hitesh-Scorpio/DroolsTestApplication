@@ -13,7 +13,7 @@
 
   <properties>
     <!-- change this if you desire to use a different version of Apex Core -->
-    <apex.version>3.5.0</apex.version>
+    <apex.version>3.7.0-SNAPSHOT</apex.version>
     <apex.apppackage.classpath>lib/*.jar</apex.apppackage.classpath>
   </properties>
 
@@ -280,11 +280,11 @@
       <version>${apex.version}</version>
       <scope>provided</scope>
     </dependency>
-    <dependency>
+    <!--dependency>
       <groupId>com.datatorrent</groupId>
-      <artifactId>dt-drools</artifactId>
-      <version>3.6.0-SNAPSHOT</version>
-    </dependency>
+      <artifactId>saarang</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -296,6 +296,11 @@
       <artifactId>apex-engine</artifactId>
       <version>${apex.version}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.datatorrent</groupId>
+      <artifactId>dt-drools</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
     </dependency>
 
   </dependencies>

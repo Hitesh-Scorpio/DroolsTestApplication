@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentMap;
 
 import com.datatorrent.api.DefaultInputPort;
 import com.datatorrent.api.DefaultOutputPort;
+import com.datatorrent.api.annotation.InputPortFieldAnnotation;
 import com.datatorrent.common.util.BaseOperator;
 
 public class DroolsValidator extends BaseOperator
@@ -42,6 +43,7 @@ public class DroolsValidator extends BaseOperator
       }
     }
   };
+  @InputPortFieldAnnotation(optional = true)
   public transient DefaultInputPort<ConcurrentMap<Object,List<String>>> factRuleInput = new DefaultInputPort<ConcurrentMap<Object, java.util.List<String>>>()
   {
     @Override
